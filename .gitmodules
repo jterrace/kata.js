@@ -1,0 +1,6 @@
+[submodule "require-jquery"]
+	path = katajs/externals/require-jquery
+	url = git://github.com/jrburke/require-jquery.git
+[submodule "externals/jquery-hive"]
+	path = katajs/externals/jquery-hive
+	url = git://github.com/rwldrn/jquery-hive.git

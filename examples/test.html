@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KataJS Test</title>
+    <script src="../katajs/externals/require-jquery/jquery-require-sample/webapp/scripts/require-jquery.js"></script>
+    <script>
+		require.config({
+			baseUrl: "../katajs",
+			
+			//Prevents caching during debugging
+			urlArgs: "bust=" +  (new Date()).getTime()
+		});
+		
+		var Kata;
+		
+	    require(["Kata"], function(_Kata) {
+	    	Kata = _Kata;
+	    	$(document).ready(init);
+	    });
+	    
+	    function init() {
+            console.log(Kata);
+
+            /*kata_main = new Kata.MainThread(
+                    "test.js",
+                    "Test",
+                    { space : "sirikata://localhost" }
+            );*/
+	    };
+	    
+    </script>
+</head>
+<body>
+    <h1>Stuff</h1>
+</body>
+</html>
